@@ -7,7 +7,7 @@
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server",
     "dev": "yarn run webpack-dev-server --env.mode development --hot --open",
-    "prod": "yarn run webpack-dev-server --env.mode production"
+    "prod": "yarn run webpack --env.mode production"
   },
   "author": "Gabriel Rosa <gabrieldsrosa@gmail.com>",
   "license": "MIT",
