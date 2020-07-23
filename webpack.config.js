@@ -1,14 +1,14 @@
-const wepack = require('webpack');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
-module.exposts = ({ mode }) => ({
+module.exports = ({ mode }) => ({
   mode,
   devtool: 'source-map',
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   output: {
     filename: 'build.js',
-    path: path.resolve('build'),
+    path: path.resolve(__dirname, 'build'),
   },
   devServer: {
     port: 3000,
@@ -44,9 +44,5 @@ module.exposts = ({ mode }) => ({
   ],
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
-  },
-  externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
   },
 });
