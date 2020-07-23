@@ -2,6 +2,13 @@
   "name": "react-boilerplate-v3",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "prettify": "yarn prettier --write .",
+    "webpack": "webpack",
+    "webpack-dev-server": "webpack-dev-server",
+    "dev": "yarn run webpack-dev-server --env.mode development --hot --open",
+    "prod": "yarn run webpack-dev-server --env.mode production"
+  },
   "author": "Gabriel Rosa <gabrieldsrosa@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -13,6 +20,8 @@
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
     "@typescript-eslint/eslint-plugin": "^3.7.0",
     "@typescript-eslint/parser": "^3.7.0",
     "babel-loader": "^8.1.0",
@@ -37,5 +46,9 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
