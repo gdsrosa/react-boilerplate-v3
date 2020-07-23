@@ -1,0 +1,12 @@
+{
+  "name": "react-boilerplate-v3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gabriel Rosa <gabrieldsrosa@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
