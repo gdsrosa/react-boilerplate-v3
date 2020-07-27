@@ -1,32 +1,27 @@
 {
   "compilerOptions": {
-  "outDir": "./dist/",
-  "sourceMap": true,
-  "baseUrl": "./",
-  "target": "es5",
-  "lib": [
-    "dom",
-    "dom.iterable",
-    "esnext"
-  ],
-  "allowJs": true,
-  "skipLibCheck": true,
-  "esModuleInterop": true,
-  "allowSyntheticDefaultImports": true,
-  "strict": true,
-  "forceConsistentCasingInFileNames": true,
-  "module": "esnext",
-  "moduleResolution": "node",
-  "resolveJsonModule": true,
-  "isolatedModules": true,
-  "noEmit": false,
-  "jsx": "react"
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "baseUrl": "src",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react",
+    "paths": {
+      "@store/*": ["store/*"],
+      "@components/*": ["components/*"]
+    }
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "**/*.test.ts",
-    "**/*.test.tsx"
-  ]
+  "include": ["src"],
+  "exclude": ["**/*.test.ts", "**/*.test.tsx"]
 }
