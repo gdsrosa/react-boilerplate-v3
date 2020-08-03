@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { RootState } from './store/types';
 import { handleSetMessage } from './store/modules/greet';
+import Button from '@components/Button';
 import './App.scss';
 
 const App: React.FC = () => {
@@ -12,14 +13,14 @@ const App: React.FC = () => {
   return (
     <div className="App">
       Click on the button see a message!
-      <button
+      <Button
         type="button"
         onClick={() =>
           dispatch(handleSetMessage('Hello, explore the application go to'))
         }
       >
         See message
-      </button>
+      </Button>
       {message && (
         <p>
           {message} <code>App.tsx</code>{' '}
